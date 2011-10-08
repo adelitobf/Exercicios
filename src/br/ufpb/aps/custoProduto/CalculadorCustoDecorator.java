@@ -1,6 +1,7 @@
 package br.ufpb.aps.custoProduto;
 
-public abstract class CalculadorCustoDecorator implements CalculadorCusto{
+
+public class CalculadorCustoDecorator implements CalculadorCusto{
 
 	protected CalculadorCusto custo;
 	
@@ -11,12 +12,12 @@ public abstract class CalculadorCustoDecorator implements CalculadorCusto{
 
 	@Override
 	public double getPreco() {
-		return this.custo.getPreco();
+		return custo.getPreco();
 	}
 
 	@Override
 	public String getTipo() {
-		return this.custo.getTipo();
+		return custo.getTipo();
 	}
 	
 }

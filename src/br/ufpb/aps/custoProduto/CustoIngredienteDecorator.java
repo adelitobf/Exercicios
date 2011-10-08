@@ -12,7 +12,7 @@ public class CustoIngredienteDecorator extends CalculadorCustoDecorator{
 	
 	@Override
 	public double getPreco() {
-		return precoIngrediente+custo.getPreco();
+		return custo.getPreco()+precoIngrediente;
 	}
 
 	public void setPreco(double precoIngrediente){
@@ -20,11 +20,11 @@ public class CustoIngredienteDecorator extends CalculadorCustoDecorator{
 	}
 
 	public String getTipo() {
-		return tipo+", "+custo.getTipo();
+		return custo.getTipo()+", "+tipo;
 	}
 
 	public void setTipo(String tipo){
-		this.tipo = tipo;
+		this.tipo= tipo;
 	}
 
 }

@@ -11,7 +11,7 @@ public class CustoFuncionamentoDecorator extends CalculadorCustoDecorator {
 	
 	@Override
 	public double getPreco() {
-		return precoFuncionamento+custo.getPreco();
+		return custo.getPreco()+precoFuncionamento;//Alterei a ordem
 	}
 
 	public void setPreco(double precoIngrediente){
@@ -19,7 +19,7 @@ public class CustoFuncionamentoDecorator extends CalculadorCustoDecorator {
 	}
 
 	public String getTipo() {
-		return tipo+", "+custo.getTipo();
+		return custo.getTipo()+", "+tipo;
 	}
 
 	public void setTipo(String tipo){
