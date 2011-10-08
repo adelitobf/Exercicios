@@ -11,7 +11,7 @@ public class CustoFuncionamentoDecorator extends CalculadorCustoDecorator {
 	
 	@Override
 	public double getPreco() {
-		return custo.getPreco()+precoFuncionamento;//Alterei a ordem
+		return custo.getPreco()+precoFuncionamento;
 	}
 
 	public void setPreco(double precoIngrediente){
